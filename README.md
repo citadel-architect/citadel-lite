@@ -1,6 +1,13 @@
-# CITADEL_LITE_README.md - Master-Tier AI Agent Hardening
+# Citadel Architect
 
-![Citadel Shield](https://raw.githubusercontent.com/citadel-architect/citadel-lite/main/assets/banner.png)
+```text
+ ██████╗██╗████████╗ █████╗ ██████╗ ███████╗██╗
+██╔════╝██║╚══██╔══╝██╔══██╗██╔══██╗██╔════╝██║
+██║     ██║   ██║   ███████║██║  ██║█████╗  ██║
+██║     ██║   ██║   ██╔══██║██║  ██║██╔══╝  ██║
+╚██████╗██║   ██║   ██║  ██║██████╔╝███████╗███████╗
+ ╚═════╝╚═╝   ╚═╝   ╚═╝  ╚═╝╚═════╝ ╚══════╝╚══════╝
+            C I T A D E L   A R C H I T E C T
 
 ## Master-Tier Security for Autonomous Agents
 

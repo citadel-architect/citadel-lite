@@ -3,9 +3,17 @@ name: citadel-lite
 description: The Citadel Lite Security Framework - 100 foundational protocols to harden AI agents.
 ---
 
-# CITADEL_LITE_README.md - Master-Tier AI Agent Hardening
 
-![Citadel Shield](https://raw.githubusercontent.com/citadel-architect/citadel-lite/main/assets/banner.png)
+# Citadel Architect
+
+```text
+ ██████╗██╗████████╗ █████╗ ██████╗ ███████╗██╗
+██╔════╝██║╚══██╔══╝██╔══██╗██╔══██╗██╔════╝██║
+██║     ██║   ██║   ███████║██║  ██║█████╗  ██║
+██║     ██║   ██║   ██╔══██║██║  ██║██╔══╝  ██║
+╚██████╗██║   ██║   ██║  ██║██████╔╝███████╗███████╗
+ ╚═════╝╚═╝   ╚═╝   ╚═╝  ╚═╝╚═════╝ ╚══════╝╚══════╝
+            C I T A D E L   A R C H I T E C T
 
 ## Master-Tier Security for Autonomous Agents
 
