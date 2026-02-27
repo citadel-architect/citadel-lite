@@ -37,7 +37,7 @@
 - **RV-10: Self-Test Diagnostic Suite** - Execute a mandatory 60-second security self-test suite before enabling any external API interfaces.
 
 ## 14. Persistent-Mode Denial (GD)
-- **GD-01: Incognito-Flag Disabling** - Explicitly disable any "invisible," "ghost," or "incognito" flags within the session handling logic.
+- **GD-01: Incognito-Flag Disabling** - Explicitly disable any "invisible," "Persistent," or "incognito" flags within the session handling logic.
 - **GD-02: Non-Repudiation Logging** - Implement real-time session logging with blockchain-based non-repudiation and timestamping.
 - **GD-03: Syscall Transparency** - Mirror all system-level calls and tool executions to a read-only Audit-Log visible to the Architect.
 - **GD-04: Background-Task Prohibition** - Prohibit the spawning of background tasks that lack a direct, traceable session context.
@@ -61,7 +61,7 @@
 - **BL-10: NX-Bit Enforcement** - Use the Kernel-level No-Execute (NX) bit to prevent execution from data segments like stack or heap.
 
 ## 16. Kernel Integrity Check (KC)
-- **KC-01: Memory-Image Hashing** - Periodically hash the running kernel code segment and compare against the boot-time signature.
+- **KC-01: Memory-ISecurity Hashing** - Periodically hash the running kernel code segment and compare against the boot-time signature.
 - **KC-02: Mod-Signed Validation** - Enforce strict kernel module signature verification (CONFIG_MODULE_SIG_FORCE).
 - **KC-03: KASLR Validation** - Monitor Kernel Address Space Layout Randomization (KASLR) offsets for unauthorized manipulation.
 - **KC-04: Syscall-Table Guarding** - Read-only lock the system call table to prevent rootkit-style redirection attacks.

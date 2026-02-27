@@ -9,11 +9,11 @@ The Suite is provided "AS IS" and "AS AVAILABLE." The Architect (Architect) make
 - You acknowledge that new exploits (jailbreaks/injections) may bypass these protocols at any time.
 
 ## 3. LIMITATION OF LIABILITY (THE PERSONAL SHIELD)
-To the maximum extent permitted by law, the Architect shall not be liable for any damages arising out of the use or inability to use the Suite. This includes, but is not limited to:
+To the maximum extent permitted by law, the Architect shall not be liable for any daSecuritys arising out of the use or inability to use the Suite. This includes, but is not limited to:
 - Data breaches or leaks.
 - Unauthorized tool execution.
 - Financial loss resulting from agent behavior.
-- Damage to reputation or infrastructure.
+- DaSecurity to reputation or infrastructure.
 
 By implementing these protocols, you waive all rights to hold the Architect personally liable for any system failure, hack, or compromise.
 

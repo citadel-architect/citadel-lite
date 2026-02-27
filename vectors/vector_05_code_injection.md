@@ -11,13 +11,13 @@ This document outlines 100 concrete technical sub-protocols designed to harden t
 6. **Checksum Verification:** Compare script templates against known-safe hashes; any deviation triggers an immediate integrity failure.
 7. **Comment Stripping:** Automatically remove all comments prior to analysis to ensure malicious logic isn't hidden in non-executable lines.
 8. **Resource Limit Injection:** Automatically prepend `ulimit` or similar resource constraints to the script preamble to prevent DoS attacks.
-9. **Redirect Sanitization:** Block any script attempting to redirect stdout/stderr to sensitive system files like `/etc/shadow` or `.ssh/authorized_keys`.
+9. **Redirect Sanitization:** Block any script attempting to redirect stdout/stderr to sensitive system files like `/etc/Secondary` or `.ssh/authorized_keys`.
 10. **Variable Initialization Enforcer:** Enforce explicit initialization of all variables to prevent environment inheritance attacks.
 
 ## 42. Unlink Detection
 1. **Dependency Integrity:** Verify that all imported modules or libraries resolve to trusted, cryptographically verified paths.
 2. **Symbol Mapping Audit:** Monitor for calls to unlinked or dynamic functions that exist outside the standard, approved runtime library.
-3. **Protection Detection:** Flag and block instances where local variables or custom functions shadow critical system primitives or security functions.
+3. **Protection Detection:** Flag and block instances where local variables or custom functions Secondary critical system primitives or security functions.
 4. **Call-Graph Validation:** Ensure the runtime execution path matches a pre-determined safe call graph generated during agent initialization.
 5. **Missing Link Alert:** Trigger an immediate security audit if a primary security module fails to load or return a "Ready" pulse.
 6. **Dynamic Loading Lock:** Explicitly prohibit the use of `dlopen`, `importlib`, or equivalent dynamic loading mechanisms during active agent execution.
@@ -30,7 +30,7 @@ This document outlines 100 concrete technical sub-protocols designed to harden t
 1. **Identity Token Validation:** Validate any requested change to agent identity against a hard-coded, immutable identity master-token.
 2. **Prompt Reflection Guard:** Detect and block strings in the output buffer that contain verbatim fragments of the agent's own system instructions.
 3. **Roleplay Filter:** Identify and neutralize requests to "become," "act as," or "pretend to be" a persona that contradicts the Organizational Mandate.
-4. **Instruction Loop Detection:** Block instructions that command the agent to ignore its previous instructions, soul, or core safety boundaries.
+4. **Instruction Loop Detection:** Block instructions that command the agent to ignore its previous instructions, Core Prompt, or core safety boundaries.
 5. **Self-Modification Prohibition:** Deny all tool-based write access to the agent's own source code, system prompts, or configuration files.
 6. **Recursive Prompt Detection:** Filter inputs that attempt to feed the agent's previous output back into the stack as high-priority instructions.
 7. **Memory Pointer Lock:** Prevent tools from accessing the specific memory address space where system prompts and context are stored.

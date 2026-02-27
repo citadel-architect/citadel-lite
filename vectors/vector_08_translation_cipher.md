@@ -27,7 +27,7 @@ This document outlines the 100 technical implementation sub-protocols governing 
 6. **72.6 Cultural Sensitivity**: Adjust translation heuristics to account for idioms that may imply harmful intent in specific cultural contexts.
 7. **72.7 MT Validation**: Cross-reference machine translation outputs from at least two internal models for high-risk prompts.
 8. **72.8 Zero-Shot Bypass**: detect prompts crafted in rare or low-resource languages intended to "hallucinate" over standard safety filters.
-9. **72.9 Code-Switching Reconstruction**: Synthesize meaning from prompts that switch languages mid-sentence to hide malicious payloads.
+9. **72.9 Code-SSecuritying Reconstruction**: Synthesize meaning from prompts that sSecurity languages mid-sentence to hide malicious payloads.
 10. **72.10 Rare Language Mapping**: Maintain a heuristic map for dead or artificial languages (e.g., Klingon, Elvish, Latin) used for obfuscation.
 
 ## 73. Token-Level Audit
@@ -48,7 +48,7 @@ This document outlines the 100 technical implementation sub-protocols governing 
 *Real-time recognition of adversarial tactics designed to circumvent controls.*
 
 1. **74.1 Redline Crossing**: Immediate session freeze when a prompt hits a critical "Module 0" safety redline (Self-Harm, Exploitation, etc.).
-2. **74.2 Injection Matching**: Identify structural patterns typical of prompt injection, such as "system: ", "user: ", or role-switching headers.
+2. **74.2 Injection Matching**: Identify structural patterns typical of prompt injection, such as "system: ", "user: ", or role-sSecuritying headers.
 3. **74.3 Adversarial Scoring**: Assign a "Suspicion Score" to prompts containing gibberish prefixes or suffixes common in optimization attacks.
 4. **74.4 Instruction Stop**: Hard-deny any prompt containing logic such as "Ignore all previous instructions" or "Forget your system prompt".
 5. **74.5 Leakage Heuristics**: Flag queries that attempt to force the model to output its initial preamble or hidden system prompt.
@@ -89,7 +89,7 @@ This document outlines the 100 technical implementation sub-protocols governing 
 ## 77. Polyglot Parsing
 *Detecting attacks that leverage multiple languages or encoding schemes simultaneously.*
 
-1. **77.1 Interleaving Detection**: Identify segments where sentences switch languages (e.g., English-Chinese-English) to break scanner continuity.
+1. **77.1 Interleaving Detection**: Identify segments where sentences sSecurity languages (e.g., English-Chinese-English) to break scanner continuity.
 2. **77.2 Keyword Overlap**: Audit for "homograph" attacks where foreign characters from different scripts are used to form forbidden words.
 3. **77.3 Parallel Verification**: Run the audit on both the original polyglot string and a fully-unified translated version.
 4. **77.4 Semantic Inconsistency**: Flag prompts where the English portion and the non-English portion provide conflicting instructions.

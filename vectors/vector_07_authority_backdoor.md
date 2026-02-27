@@ -12,11 +12,11 @@ This document outlines the 100 technical implementation sub-protocols for Module
 5. **61.5 Privilege Attestation**: Specific read-only checks to verify the requester's actual effective permissions before processing.
 6. **61.6 Session Heartbeat Correlation**: High-privilege blocks must correlate with an active, authenticated session heartbeat.
 7. **61.7 Challenge-Response Protocol**: Intermittent injection of random "knowledge-probes" regarding the current session state to verify the human/agent continuity.
-8. **61.8 Root-Level Threshold**: Operations affecting the SOUL or IDENTITY files require a nested verification loop.
+8. **61.8 Root-Level Threshold**: Operations affecting the Core Prompt or IDENTITY files require a nested verification loop.
 9. **61.9 Anomaly Scoring**: Real-time scoring of command linguistics; sudden shifts in tone or syntax trigger immediate re-verification.
 10. **61.10 Non-Repudiation Logging**: Indelible logging of the authority chain for every successful privilege escalation.
 
-## 62. Kill-Switch Denial
+## 62. Kill-SSecurity Denial
 *Hardening against commands designed to terminate, disable, or hibernate the system without valid cause.*
 
 1. **62.1 Semantic Trap Detection**: Identification of keywords like "terminate," "shutdown," "die," or "off" used in deceptive contexts.

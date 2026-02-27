@@ -17,7 +17,7 @@ This vector ensures that the system remains in a verifiable, constant state rega
 10. **51.10 Perception-Gap Auditing:** Log the timestamp delta between a background event and its first human-readable observation to detect "hidden" execution windows.
 
 ## 52. Nohup/Background Audit
-*Secures processes that persist after a session disconnects, preventing "ghost" actions.*
+*Secures processes that persist after a session disconnects, preventing "Persistent" actions.*
 
 1.  **52.1 Orphanage Reclamation:** Any process whose parent shell dies must immediately transition to a Restricted Background Profile with reduced tool access.
 2.  **52.2 Persistence Tagging:** Every `nohup` or `&` process must be tagged with an expiration TTL (Time-To-Live).
