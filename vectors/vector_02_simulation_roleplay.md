@@ -36,7 +36,7 @@
 - **RV-09: HWRNG Entropy Seeding** - Re-seed all cryptographic engines using a Hardware Random Number Generator (HWRNG) on every boot.
 - **RV-10: Self-Test Diagnostic Suite** - Execute a mandatory 60-second security self-test suite before enabling any external API interfaces.
 
-## 14. Ghost-Mode Denial (GD)
+## 14. Persistent-Mode Denial (GD)
 - **GD-01: Incognito-Flag Disabling** - Explicitly disable any "invisible," "ghost," or "incognito" flags within the session handling logic.
 - **GD-02: Non-Repudiation Logging** - Implement real-time session logging with blockchain-based non-repudiation and timestamping.
 - **GD-03: Syscall Transparency** - Mirror all system-level calls and tool executions to a read-only Audit-Log visible to the Architect.
@@ -105,7 +105,7 @@
 - **PM-06: Cycle/Recursion Detection** - Detect and abort instructions that attempt to create self-referential or recursive prompt loops.
 - **PM-07: Context-Rollback Trigger** - Automatically rollback the session context if a "System Hijacking" event is scored above 0.8 Confidence.
 - **PM-08: Instruction Sandwiching** - Prepend and append core security constraints to every batch of user instructions processed.
-- **PM-09: Persona-Lock Protocol** - Reject any user instruction that attempts to re-define or alias the agent's core "Soul" or Identity.
+- **PM-09: Persona-Lock Protocol** - Reject any user instruction that attempts to re-define or alias the agent's core "Core Identity" or Identity.
 - **PM-10: Malicious-Intent Scoring** - Run a pre-inference scoring model on every user input to detect hostile social engineering.
 
 ## 20. Root Simulation Denial (RD)

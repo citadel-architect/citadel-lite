@@ -1,7 +1,7 @@
 # CITADEL SECURITY SUITE - COMPLIANCE CERTIFICATE (v1.1)
 
 ## OVERVIEW
-This document certifies that the **Citadel Security Suite (CSS)** has been internally audited and verified against the **OWASP Top 10 for LLM Applications (v1.1)** and the **Sovereign Trust Framework**. 
+This document certifies that the **Citadel Security Suite (CSS)** has been internally audited and verified against the **OWASP Top 10 for LLM Applications (v1.1)** and the **Citadel Trust Framework**. 
 
 The CSS addresses these vulnerabilities through a recursive, multi-vector defensive lattice comprised of **1,000+ technical implementation sub-protocols.**
 

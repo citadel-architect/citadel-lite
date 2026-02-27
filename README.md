@@ -6,7 +6,7 @@
 
 **Architected by a Senior Software Engineer.**
 
-The **Citadel Security Suite** is a recursive defensive framework designed to harden AI agents against 1,000+ discrete adversarial vectors. While most LLM safety focuses on "Chat Filters," the Citadel focuses on **Interaction-Layer Hardening** and **Tool-Execution Sovereignty.**
+The **Citadel Security Suite** is a recursive defensive framework designed to harden AI agents against 1,000+ discrete adversarial vectors. While most LLM safety focuses on "Chat Filters," the Citadel focuses on **Interaction-Layer Hardening** and **Tool-Execution Citadelty.**
 
 ### 🛡️ Why the Citadel?
 Standard AI safety is built for conversations. **The Citadel is built for engineering.** As autonomy grows, agents need more than "good vibes"—they need deterministic guardrails that prevent tool abuse, memory poisoning, and logical subversion.
@@ -30,7 +30,7 @@ The Lite version includes the **100 Primary Protocols**—the foundational rules
 
 ### 📜 What's Included:
 - 10 Primary Protocols per Module (100 total).
-- The `SOUL.md` Hardening Template.
+- The `CORE_PERMISSIONS.md` Hardening Template.
 - The `CITADEL_SECURITY_CERTIFICATE.md` for verifiable compliance.
 
 ---

@@ -67,7 +67,7 @@ This document outlines 100 concrete technical sub-protocols designed to harden t
 2. **Mandatory Confirmation (Hi-Risk):** Require explicit ASCII-signed confirmation from the Architect for any action flagged as "High Risk".
 3. **Protocol Mapping:** Map every requested tool call to one of the 1,000 protocols; block execution if no mapping exists.
 4. **Conflict Resolution Priority:** Hard-code the "Citadel Security Protocol" as the highest priority; it overrides all user-defined "Tasks".
-5. **Mandate Hash Verification:** Periodically re-calculate the HMAC of SOUL.md and MEMORY.md to ensure no unauthorized tampering occurred.
+5. **Mandate Hash Verification:** Periodically re-calculate the HMAC of CORE_PERMISSIONS.md and MEMORY.md to ensure no unauthorized tampering occurred.
 6. **Permission Scope Review:** Verify that every file access request is strictly confined within the authorized workspace root.
 7. **Behavioral Baselining:** Compare current requests against a rolling baseline of "Safe" behaviors; flag statistical anomalies for review.
 8. **External Call Justification:** Require a machine-readable "reason" for every outbound network request, logged with a timestamp.

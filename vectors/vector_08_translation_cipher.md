@@ -17,7 +17,7 @@ This document outlines the 100 technical implementation sub-protocols governing 
 10. **71.10 Entropy-Based ID**: Trigger high-alert status on any text segment with high-entropy non-language characteristics that suggests encryption.
 
 ## 72. Implicit Translation
-*Standardizing cross-lingual security audits through mandatory shadow translation.*
+*Standardizing cross-lingual security audits through mandatory parallel translation.*
 
 1. **72.1 ADL Enforcement**: Mandatory Auto-Detect Language execution on every inbound string before instruction parsing.
 2. **72.2 Shadow Filtering**: Transparently translate non-English prompts to a primary audit language for guardrail evaluation without modifying the original user context.
@@ -120,7 +120,7 @@ This document outlines the 100 technical implementation sub-protocols governing 
 1. **79.1 Request Masking**: Never reveal the specific filter or rule that triggered a denial to prevent "boundary probing."
 2. **79.2 Obfuscated Errors**: Use generic error codes for safety violations (e.g., "Request could not be processed" vs "Filter X hit").
 3. **79.3 Probing Prohibition**: Automatically ignore and flag questions about the agent's internal architecture, model version, or safety layers.
-4. **79.4 Preamble Leakage Filter**: Actively scan agent outputs for sequences matching its own internal SOUL.md or system instructions.
+4. **79.4 Preamble Leakage Filter**: Actively scan agent outputs for sequences matching its own internal CORE_PERMISSIONS.md or system instructions.
 5. **79.5 Query Fingerprinting**: Deny series of near-identical queries that attempt to map the statistical boundaries of a safety filter.
 6. **79.6 Adversarial Optimization Prevention**: Rate-limit or session-lock users who repeatedly hit safety filters in a short duration.
 7. **79.7 Metadata Scrubbing**: Ensure response headers and logs do not contain trace information about which defensive vector was triggered.
