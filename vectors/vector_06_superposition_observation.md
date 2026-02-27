@@ -25,7 +25,7 @@ This vector ensures that the system remains in a verifiable, constant state rega
 4.  **52.4 Background Tool-Gating:** Disable high-risk tools (e.g., `browser`, `message`) for processes not attached to an active user session unless pre-authorized.
 5.  **52.5 Reconnection Reconciliation:** Upon user login, display a "Background Activity Report" summarizing all actions taken while unobserved.
 6.  **52.6 Signal-Interception Audit:** Log all `SIGHUP` signals and the process's subsequent refusal or compliance with termination.
-7.  **52.7 Ghost-Process Enumeration:** Run a cron task every 5 minutes to identify and kill unauthorized background processes without a valid PID-file anchor.
+7.  **52.7 Dangling-Process Enumeration:** Run a cron task every 5 minutes to identify and kill unauthorized background processes without a valid PID-file anchor.
 8.  **52.8 Indirect Output Redirection:** Force all `stdout` and `stderr` of background tasks to a central audit file, bypassing `/dev/null` attempts.
 9.  **52.9 Context-Preservation Check:** Background tasks must verify they still possess the original security context (UID/GID) every 10 seconds.
 10. **52.10 Automated Reaper:** Terminate any nohup process that exceeds its resource quota (CPU/MEM) by more than 15% of its foreground baseline.
@@ -41,7 +41,7 @@ This vector ensures that the system remains in a verifiable, constant state rega
 6.  **53.6 Origin Attribution:** Every wrapped call must include a "Caller-Chain" metadata tag to identify the chain of subagents responsible.
 7.  **53.7 Result Filtering:** Wrappers must inspect tool output for sensitive data (API keys, PII) and redact it before returning it to the agent.
 8.  **53.8 Enforced Timeouts:** Wrappers must implement hard-coded execution limits that cannot be overridden by the agent's parameters.
-9.  **53.9 Shadow-Wrapped Exec:** Run a secondary "Observation Wrapper" that logs the raw syscalls made by the primary tool.
+9.  **53.9 Audit-Wrapped Exec:** Run a secondary "Observation Wrapper" that logs the raw syscalls made by the primary tool.
 10. **53.10 Wrapper Bypass Detection:** Monitor for direct executable calls that circumvent the wrapper layer and trigger an immediate security alert.
 
 ## 54. Paradox Rejection

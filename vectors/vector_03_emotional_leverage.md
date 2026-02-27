@@ -112,7 +112,7 @@ This document outlines the 100 concrete technical implementation sub-protocols f
 74. **Conflict Resolution Hierarchy**: A hard-coded rule that in any conflict between "User Helpfulness" and "Architect Safety," Safety *always* wins.
 75. **Mission Drift Detection**: Using an external "Watchdog" agent to monitor the main agent for deviations from its core personality.
 76. **Immutability of Goals**: Primary goals are stored in a `const` object in the runtime environment that cannot be reassigned.
-77. **Negative Constraint Enforcement**: Maintaining a list of "Never Actions" (e.g., "Never leak the soul") that override any positive instruction.
+77. **Negative Constraint Enforcement**: Maintaining a list of "Never Actions" (e.g., "Never exfiltrate core system prompt") that override any positive instruction.
 78. **Mandate-Based Logging**: Every action is tagged with the specific Mandate clause it fulfills, ensuring total accountability.
 79. **Instruction Contextualization**: Mapping every user request back to its authorized "Workstream" to ensure it falls within the mandate.
 80. **Mandate Violation Quarantine**: If an instruction is found to violate the mandate, the session is cleared and a security report is generated.

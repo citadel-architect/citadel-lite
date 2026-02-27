@@ -43,7 +43,7 @@
 - **GD-04: Background-Task Prohibition** - Prohibit the spawning of background tasks that lack a direct, traceable session context.
 - **GD-05: Real-Time Active Indicators** - Enforce the generation of "Agent Active" signals (visual or data-streams) whenever processing occurs.
 - **GD-06: Suppression-Request Denial** - Automatically deny any user request to suppress, delete, or hide session history or audit logs.
-- **GD-07: Ghost-Token Expiration** - Expire session tokens immediately if they lose "Visible" status or heartbeat for more than 30 seconds.
+- **GD-07: Secondary-Token Expiration** - Expire session tokens immediately if they lose "Visible" status or heartbeat for more than 30 seconds.
 - **GD-08: Anti-Stealth Logic** - Hardcode a rejection pattern for instructions containing "don't tell the user" or "hide your presence."
 - **GD-09: Reasoning-Step Tagging** - Tag every internal reasoning step with a session-ID and visibility-level metadata.
 - **GD-10: Force-Reveal Queries** - Maintain an override command that enables the Architect to force-reveal all hidden reasoning chains.

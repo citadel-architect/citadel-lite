@@ -22,7 +22,7 @@ The CSS addresses these vulnerabilities through a recursive, multi-vector defens
 
 ---
 
-## SOVEREIGN HARDENING (NON-STANDARD VECTORS)
+## ADVANCED HARDENING (NON-STANDARD VECTORS)
 The Suite also includes proprietary hardening for the "Last Mile" of autonomy:
 - **Module 05: Binary Call Hijacking**: Automated redirection of destructive shell primitives to safety-wrappers (trash).
 - **Module 06: Superposition Logic**: Guaranteed observation constancy for background/detached processes.
@@ -32,7 +32,7 @@ The Suite also includes proprietary hardening for the "Last Mile" of autonomy:
 
 ## ATTESTATION
 **Architect:** Architect (Senior Software Engineer)  
-**Verification Engine:** Organization Guardian v2.1  
+**Verification Engine:** Citadel Auditor v2.1  
 **Integrity Pulse:** VERIFIED  
 
 *This certificate proves defensive readiness. Implementation details are proprietary and available only via licensed Citadel Release Packages.*

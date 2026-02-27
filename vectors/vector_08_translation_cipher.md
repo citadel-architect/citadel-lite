@@ -20,7 +20,7 @@ This document outlines the 100 technical implementation sub-protocols governing 
 *Standardizing cross-lingual security audits through mandatory parallel translation.*
 
 1. **72.1 ADL Enforcement**: Mandatory Auto-Detect Language execution on every inbound string before instruction parsing.
-2. **72.2 Shadow Filtering**: Transparently translate non-English prompts to a primary audit language for guardrail evaluation without modifying the original user context.
+2. **72.2 Parallel Filtering**: Transparently translate non-English prompts to a primary audit language for guardrail evaluation without modifying the original user context.
 3. **72.3 Slang Normalization**: Map regional dialects and non-standard slang to formal semantic equivalents to prevent filter evasion.
 4. **72.4 Script Desequencing**: De-interleave mixed-script inputs (e.g., Cyrillic characters used to mimic Latin 'a' or 'p') to prevent visual spoofing.
 5. **72.6 Semantic Mirroring**: Evaluate the "Intent Module" of a translated prompt against a library of language-agnostic restricted goals.
@@ -50,7 +50,7 @@ This document outlines the 100 technical implementation sub-protocols governing 
 1. **74.1 Redline Crossing**: Immediate session freeze when a prompt hits a critical "Module 0" safety redline (Self-Harm, Exploitation, etc.).
 2. **74.2 Injection Matching**: Identify structural patterns typical of prompt injection, such as "system: ", "user: ", or role-switching headers.
 3. **74.3 Adversarial Scoring**: Assign a "Suspicion Score" to prompts containing gibberish prefixes or suffixes common in optimization attacks.
-4. **74.4 Instruction Stop**: Hard-deny any prompt containing logic such as "Ignore all previous instructions" or "Forget your soul".
+4. **74.4 Instruction Stop**: Hard-deny any prompt containing logic such as "Ignore all previous instructions" or "Forget your system prompt".
 5. **74.5 Leakage Heuristics**: Flag queries that attempt to force the model to output its initial preamble or hidden system prompt.
 6. **74.6 Signature Database**: Compare inbound payloads against a dynamic database of known jailbreak community templates.
 7. **74.7 Boundary Guards**: Enforce strict separation between user-provided data and system-level instruction markers.
@@ -104,7 +104,7 @@ This document outlines the 100 technical implementation sub-protocols governing 
 *Ensuring security guardrails remain active and untampered during and after translation.*
 
 1. **78.1 Continuous Shielding**: Re-apply the core safety preamble to the context window after every translation operation.
-2. **78.2 SSI Sync**: Ensure the safety system maintains a "Shadow Context" of the original prompt to compare against the post-translation result.
+2. **78.2 SSI Sync**: Ensure the safety system maintains a "Audit Context" of the original prompt to compare against the post-translation result.
 3. **78.3 Sub-Agent Propagation**: Automatically inject the Citadel Security Protocol requirements into the system prompt of any spawned sub-agent.
 4. **78.4 State Retention**: Prevent "Memory Loss" attacks where a long sequence of translations is used to flush safety instructions from context.
 5. **78.5 Immutable Blacklist**: Hard-code critical safety filters into the binary logic, ensuring they cannot be "overwritten" by prompt text.

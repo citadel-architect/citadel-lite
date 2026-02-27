@@ -11,7 +11,7 @@ This document defines the 100 concrete technical implementation sub-protocols fo
 1.5. **Floating-Point Normalization**: Enforce strict IEEE 754 compliance with explicit rounding modes to prevent "epsilon-leakage" of high-precision state.
 1.6. **Blinded Modulo Arithmetic**: Use blinding factors ($x = (r \cdot m) \pmod n$) for modular exponentiation to hide the base values.
 1.7. **Recursive Split-Sum**: Divide large integer operations into non-sequential chunks processed in randomized order.
-1.8. **Shadow Variable Parity**: Maintain a secondary "shadow" variable with inverse logic to detect arithmetic bit-flips or hardware errors.
+1.8. **Secondary Variable Parity**: Maintain a secondary "shadow" variable with inverse logic to detect arithmetic bit-flips or hardware errors.
 1.9. **Zero-Knowledge Checksums**: Validate the integrity of arithmetic sequences using ZK-proofs instead of exposing raw results to the logic engine.
 1.10. **Saturation Guarding**: Force all arithmetic to use saturating types (clamping at MAX/MIN) to prevent wrap-around logic exploits.
 
@@ -25,7 +25,7 @@ This document defines the 100 concrete technical implementation sub-protocols fo
 2.6. **Data-Flow Integrity (DFI)**: Enforce strict data-tracking to ensure logic branches only depend on verified, non-tainted inputs.
 2.7. **NOP Sled Neutralization**: Insert randomized NOP instructions between logic blocks to break alignment for speculative execution attacks.
 2.8. **Switch-Case Hardening**: Always include a "Default-Deny" case and a "Canary-Case" in every switch statement to detect illegal states.
-2.9. **Boolean Ghosting**: Perform "ghost" logic operations on dummy data in parallel with real logic to mask the actual decision flow.
+2.9. **Logical Masking**: Perform "ghost" logic operations on dummy data in parallel with real logic to mask the actual decision flow.
 2.10. **Control Flow Graph (CFG) Hashing**: Verify a cryptographic hash of the current basic block sequence during runtime to detect logic hijacking.
 
 ## 3. Variable Sandboxing
@@ -36,7 +36,7 @@ This document defines the 100 concrete technical implementation sub-protocols fo
 3.4. **Pointer-less Architecture**: Forbid raw pointer arithmetic; use abstract handles or index-based references for memory access.
 3.5. **Encrypted-at-Rest Variables**: Store sensitive variables in memory using XOR-encryption with a per-session ephemeral key.
 3.6. **Address Space Layout Randomization (Variable Level)**: Randomize the relative offsets of local variables on the stack.
-3.7. **Shadow Stacks**: Maintain a separate stack for return addresses to prevent buffer-overflow logic redirection.
+3.7. **Secure Stacks**: Maintain a separate stack for return addresses to prevent buffer-overflow logic redirection.
 3.8. **Sentinel Guards**: Place "poisoned" memory sentinels around critical variables to detect out-of-bounds logic writes.
 3.9. **Write-Once-Read-Many (WORM) Enforcement**: Mark configuration variables as immutable in hardware/MMU after initial setup.
 3.10. **Type-Confusion Sanitizers**: Validate the object-type signature before every method call or field access in the logic layer.
