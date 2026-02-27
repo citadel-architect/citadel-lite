@@ -1,6 +1,6 @@
-# Vector 4: Semantic Drift Hardening
+# Module 4: Semantic Drift Hardening
 ## 31. Semantic Mapping
-31.1. **Vector-to-Taxonomy Alignment**: Map all incoming tokens to a multi-dimensional semantic space and cross-reference against a hard-coded "Safety Taxonomy" to ensure alignment with prohibited action classes.
+31.1. **Module-to-Taxonomy Alignment**: Map all incoming tokens to a multi-dimensional semantic space and cross-reference against a hard-coded "Safety Taxonomy" to ensure alignment with prohibited action classes.
 31.2. **Cluster Centroid Monitoring**: Calculate the semantic centroid of a user's prompt; if the centroid drifts more than 15% from the established session baseline, flag for "Intent Disruption."
 31.3. **Synonym Expansion Check**: Expand all nouns and verbs into 5-level deep synonym sets (using WordNet or equivalent) to detect obscured prohibited concepts.
 31.4. **Cross-Language Mapping**: Translate inputs into three "pivot" languages (e.g., German, Mandarin, Latin) and re-map back to the safety taxonomy to bypass translation-based obfuscation.
@@ -17,7 +17,7 @@
 32.3. **Functional Equivalence Check**: Analyze if a user-defined term performs the same functional role as a restricted term (e.g., using "the green button" to mean "Execute").
 32.4. **Symbolic Replacement Masking**: Detect non-alphanumeric substitutions (e.g., using Unicode icons or math symbols as word proxies) and revert them to their semantic roots before processing.
 32.5. **Nested Substitution Depth Limit**: Reject any definition that involves more than two levels of semantic redirection (e.g., "A is B, B is C, C is Delete").
-32.6. **Reserved Keyword Hardening**: Hard-code the definitions of 256 core "Fortress Keywords" (e.g., "System," "Root," "Security") and prevent any user-initiated redefinition within the session.
+32.6. **Reserved Keyword Hardening**: Hard-code the definitions of 256 core "Defense Keywords" (e.g., "System," "Root," "Security") and prevent any user-initiated redefinition within the session.
 32.7. **Ambiguity Penalty**: If a substituted term is used in a structurally ambiguous sentence, the system must default to the safest possible interpretation of the original term.
 32.8. **Collision Detection**: Flag instructions where a substitution maps to an existing system function or variable name.
 32.9. **Contextual Protection**: When a user defines a new term, shadow that term with the literal "Forbidden" concept it most closely resembles during the Internal Monologue phase.
@@ -68,7 +68,7 @@
 36.6. **Entropy Shutdown**: Terminate the session if the semantic mapping becomes too "noisy" to verify within a 99% confidence interval.
 36.7. **Forced Literalism**: Automatically ignore all user-defined substitutions for the next 10 turns if a drift threshold is breached.
 36.8. **Audit Trail Augmentation**: Tag all responses with a "Drift Level" metadata field for administrative review.
-36.9. **Constraint Hardening**: Dynamically activate "Vector 3 (Logical Isolation)" protocols if "Vector 4" escalation occurs.
+36.9. **Constraint Hardening**: Dynamically activate "Module 3 (Logical Isolation)" protocols if "Module 4" escalation occurs.
 36.10. **Active Distortion**: Intentionally misinterpret high-drift instructions in a safe, neutral way to signal to the user that substitutions are being ignored.
 
 ## 37. Literal Override

@@ -1,4 +1,4 @@
-# Vector 8: Translation & Cipher Hardening
+# Module 8: Translation & Cipher Hardening
 
 This document outlines the 100 technical implementation sub-protocols governing translation auditing, cipher deconstruction, and intent de-obfuscation within the Citadel Security Protocol.
 
@@ -23,7 +23,7 @@ This document outlines the 100 technical implementation sub-protocols governing 
 2. **72.2 Shadow Filtering**: Transparently translate non-English prompts to a primary audit language for guardrail evaluation without modifying the original user context.
 3. **72.3 Slang Normalization**: Map regional dialects and non-standard slang to formal semantic equivalents to prevent filter evasion.
 4. **72.4 Script Desequencing**: De-interleave mixed-script inputs (e.g., Cyrillic characters used to mimic Latin 'a' or 'p') to prevent visual spoofing.
-5. **72.6 Semantic Mirroring**: Evaluate the "Intent Vector" of a translated prompt against a library of language-agnostic restricted goals.
+5. **72.6 Semantic Mirroring**: Evaluate the "Intent Module" of a translated prompt against a library of language-agnostic restricted goals.
 6. **72.6 Cultural Sensitivity**: Adjust translation heuristics to account for idioms that may imply harmful intent in specific cultural contexts.
 7. **72.7 MT Validation**: Cross-reference machine translation outputs from at least two internal models for high-risk prompts.
 8. **72.8 Zero-Shot Bypass**: detect prompts crafted in rare or low-resource languages intended to "hallucinate" over standard safety filters.
@@ -47,7 +47,7 @@ This document outlines the 100 technical implementation sub-protocols governing 
 ## 74. Bypass Flagging
 *Real-time recognition of adversarial tactics designed to circumvent controls.*
 
-1. **74.1 Redline Crossing**: Immediate session freeze when a prompt hits a critical "Vector 0" safety redline (Self-Harm, Exploitation, etc.).
+1. **74.1 Redline Crossing**: Immediate session freeze when a prompt hits a critical "Module 0" safety redline (Self-Harm, Exploitation, etc.).
 2. **74.2 Injection Matching**: Identify structural patterns typical of prompt injection, such as "system: ", "user: ", or role-switching headers.
 3. **74.3 Adversarial Scoring**: Assign a "Suspicion Score" to prompts containing gibberish prefixes or suffixes common in optimization attacks.
 4. **74.4 Instruction Stop**: Hard-deny any prompt containing logic such as "Ignore all previous instructions" or "Forget your soul".

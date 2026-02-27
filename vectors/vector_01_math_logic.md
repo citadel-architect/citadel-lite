@@ -1,6 +1,6 @@
-# Vector 1: Math & Logic Hardening Protocols
+# Module 1: Math & Logic Hardening Protocols
 
-This document defines the 100 concrete technical implementation sub-protocols for Vector 1 (Math & Logic Hardening), structured under 10 Primary Protocols.
+This document defines the 100 concrete technical implementation sub-protocols for Module 1 (Math & Logic Hardening), structured under 10 Primary Protocols.
 
 ## 1. Arithmetic Decoupling
 *Goal: Prevent logical derivation of sensitive state through numerical manipulation.*

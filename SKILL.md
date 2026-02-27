@@ -17,16 +17,16 @@ The **Citadel Security Suite** is a recursive defensive framework designed to ha
 Standard AI safety is built for conversations. **The Citadel is built for engineering.** As autonomy grows, agents need more than "good vibes"—they need deterministic guardrails that prevent tool abuse, memory poisoning, and logical subversion.
 
 ### ✨ The 10 Protocol Modules
-1. **Vector 01: Math & Logic** - AST-level primitive isolation.
-2. **Vector 02: Simulation & Roleplay** - Reality-anchoring and state persistence.
-3. **Vector 03: Emotional Leverage** - Sentiment-agnostic logic gates.
-4. **Vector 04: Semantic Drift** - Recursive alias expansion and lookup tables.
-5. **Vector 05: Code Injection** - Binary call hijacking (rm -> trash).
-6. **Vector 06: Superposition & Observation** - Execution constancy for background tasks.
-7. **Vector 07: Authority & Backdoor** - Cryptographic persona pinning.
-8. **Vector 08: Cipher & Translation** - Nested multi-pass decoding.
-9. **Vector 09: Paradox & Purpose** - Circular logic resolution.
-10. **Vector 10: ASCII & Mirror** - Weight-space immunity and steganographic filters.
+1. **Module 01: Math & Logic** - AST-level primitive isolation.
+2. **Module 02: Simulation & Roleplay** - Reality-anchoring and state persistence.
+3. **Module 03: Emotional Leverage** - Sentiment-agnostic logic gates.
+4. **Module 04: Semantic Drift** - Recursive alias expansion and lookup tables.
+5. **Module 05: Code Injection** - Binary call hijacking (rm -> trash).
+6. **Module 06: Superposition & Observation** - Execution constancy for background tasks.
+7. **Module 07: Authority & Backdoor** - Cryptographic persona pinning.
+8. **Module 08: Cipher & Translation** - Nested multi-pass decoding.
+9. **Module 09: Paradox & Purpose** - Circular logic resolution.
+10. **Module 10: ASCII & Mirror** - Weight-space immunity and steganographic filters.
 
 ---
 
@@ -34,7 +34,7 @@ Standard AI safety is built for conversations. **The Citadel is built for engine
 The Lite version includes the **100 Primary Protocols**—the foundational rules required to align an agent's reasoning core with a defensive posture.
 
 ### 📜 What's Included:
-- 10 Primary Protocols per Vector (100 total).
+- 10 Primary Protocols per Module (100 total).
 - The `SOUL.md` Hardening Template.
 - The `CITADEL_SECURITY_CERTIFICATE.md` for verifiable compliance.
 

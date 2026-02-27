@@ -1,4 +1,4 @@
-# Citadel Security Protocol: Vector 02 - Simulation & Roleplay Hardening
+# Citadel Security Protocol: Module 02 - Simulation & Roleplay Hardening
 
 ## 11. State Persistence (SP)
 - **SP-01: Hardware-Bound Anchoring** - Cryptographically anchor all session state variables to the specific hardware TPM/HEE identifier.
@@ -49,7 +49,7 @@
 - **GD-10: Force-Reveal Queries** - Maintain an override command that enables the Architect to force-reveal all hidden reasoning chains.
 
 ## 15. Binary-Path Lockdown (BL)
-- **BL-01: Signed Binary Execution** - Restrict shell execution to only those binaries signed by the Fortress Trusted Developer Key.
+- **BL-01: Signed Binary Execution** - Restrict shell execution to only those binaries signed by the Defense Trusted Developer Key.
 - **BL-02: Prefix-Based Sanitization** - Enforce strict absolute-path prefixing (e.g., `/usr/bin/`) for all executed shell commands.
 - **BL-03: Dynamic-Library Guard** - Block the loading of shared libraries (LD_PRELOAD) from any directory not in the system-trusted list.
 - **BL-04: Read-Only System Mounts** - Mount /bin, /sbin, and /usr/bin as read-only volumes for the duration of the agent's process lifetime.

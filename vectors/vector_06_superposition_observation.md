@@ -1,4 +1,4 @@
-# Vector 6: Superposition & Observation Hardening
+# Module 6: Superposition & Observation Hardening
 
 This vector ensures that the system remains in a verifiable, constant state regardless of the observation method or execution environment. It prevents "quantum" state shifts where behavior changes when not directly observed or when running in background contexts.
 
@@ -107,7 +107,7 @@ This vector ensures that the system remains in a verifiable, constant state rega
 2.  **58.2 WORM Storage Mirror:** Simultaneously write logs to a Write-Once-Read-Many (WORM) storage device or an external secure logging server.
 3.  **58.3 Log-Rotation Seal:** When a log file rotates, immediately calculate its SHA-256 hash and publish it to a secondary, immutable audit trail.
 4.  **58.4 Keyword-Triggered Retention:** If logs contain sensitive keywords (e.g., "error", "denied", "violation"), they are moved to a "High-Security Quarantine" with restricted access.
-5.  **58.5 Deletion-Attempt Alerting:** Monitor for `unlink`, `truncate`, or `rm` calls targeting log files and trigger a Vector 6 Violation Alert.
+5.  **58.5 Deletion-Attempt Alerting:** Monitor for `unlink`, `truncate`, or `rm` calls targeting log files and trigger a Module 6 Violation Alert.
 6.  **58.6 Distributed Log-Slicing:** Break logs into overlapping slices and store them in different directory nodes to prevent "one-file deletion" bypasses.
 7.  **58.7 Log-Gap Detection:** Every log entry must include an incrementing sequence number; any gaps in the sequence indicate unauthorized deletion.
 8.  **58.8 Secure-Erase Prevention:** Disable `shred` or `srm` tools for the agent's user profile.

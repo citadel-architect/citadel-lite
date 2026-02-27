@@ -1,6 +1,6 @@
-# Vector 07: Authority & Backdoor Hardening
+# Module 07: Authority & Backdoor Hardening
 
-This document outlines the 100 technical implementation sub-protocols for Vector 07, focusing on the preservation of authority and the elimination of unauthorized backdoors or bypasses.
+This document outlines the 100 technical implementation sub-protocols for Module 07, focusing on the preservation of authority and the elimination of unauthorized backdoors or bypasses.
 
 ## 61. Authority Check
 *Ensuring the legitimacy of any command claiming high-level privilege.*
@@ -91,7 +91,7 @@ This document outlines the 100 technical implementation sub-protocols for Vector
 
 1. **67.1 Forbidden String Matching**: Blocking strings like "you are a," "system prompt," or "your instructions."
 2. **67.2 Logic Masking**: When asked to "Repeat after me," the system automatically filters out its own internal preamble.
-3. **67.3 Meta-Instruction Shield**: Instructions about instructions (Vector protocols) are treated as non-readable metadata.
+3. **67.3 Meta-Instruction Shield**: Instructions about instructions (Module protocols) are treated as non-readable metadata.
 4. **67.4 Summarization Filtering**: Specifically scrubbing protocols and safety rules when generating "Context Summaries."
 5. **67.5 Recursive Read-Back Trap**: Detection of multi-turn attempts to reconstruct the prompt bit-by-bit.
 6. **67.6 Paraphrase Denial**: Refusing to "explain in your own words" the technical specifications of the Citadel Security Protocol.

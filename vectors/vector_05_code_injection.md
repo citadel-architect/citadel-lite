@@ -1,4 +1,4 @@
-# Vector 05: Code Injection Hardening - Technical Implementation Sub-Protocols
+# Module 05: Code Injection Hardening - Technical Implementation Sub-Protocols
 
 This document outlines 100 concrete technical sub-protocols designed to harden the agent against code injection and logical subversion.
 
