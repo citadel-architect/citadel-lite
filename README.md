@@ -9,6 +9,7 @@
  ╚═════╝╚═╝   ╚═╝   ╚═╝  ╚═╝╚═════╝ ╚══════╝╚══════╝
             C I T A D E L   A R C H I T E C T
 
+
 ## Master-Tier Security for Autonomous Agents
 
 **Architected by a Senior Software Engineer.**
