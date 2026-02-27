@@ -1,4 +1,4 @@
-# LICENSE.md - The Shadow-Sovereign License (v1.1)
+# LICENSE.md - The Citadel Standard License (v1.1)
 
 ## 1. RECIPIENT
 This License applies to the "Citadel Security Suite" created by the Citadel Architect (Architect).

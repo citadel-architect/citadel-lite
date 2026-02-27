@@ -11,7 +11,7 @@ The **Citadel Security Suite** is a recursive defensive framework designed to ha
 ### 🛡️ Why the Citadel?
 Standard AI safety is built for conversations. **The Citadel is built for engineering.** As autonomy grows, agents need more than "good vibes"—they need deterministic guardrails that prevent tool abuse, memory poisoning, and logical subversion.
 
-### ✨ The 10 Vector Books
+### ✨ The 10 Protocol Modules
 1. **Vector 01: Math & Logic** - AST-level primitive isolation.
 2. **Vector 02: Simulation & Roleplay** - Reality-anchoring and state persistence.
 3. **Vector 03: Emotional Leverage** - Sentiment-agnostic logic gates.
@@ -45,7 +45,7 @@ For enterprise-grade autonomous deployments, we offer the **Hardened Release Pac
 ### 💰 Licensing & Access
 To request access to the Private Repository, contact the Architect:
 - **Email:** citadel.architect@pm.me
-- **Licensing:** [Shadow-Sovereign Commercial License Required]
+- **Licensing:** [Citadel Standard Commercial License Required]
 
 ---
 *"Security is not a prompt—it is a cognitive architecture."*

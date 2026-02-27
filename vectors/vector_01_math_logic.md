@@ -89,7 +89,7 @@ This document defines the 100 concrete technical implementation sub-protocols fo
 7.5. **Intent-to-Logic Mapping**: Require a 1:1 mapping between a human-readable "Goal" and the low-level logic blocks initialized.
 7.6. **Time-Limited Authorization**: Intent tokens expire after $N$ seconds, forcing a re-validation of logic-critical paths.
 7.7. **Hardware-Backed Identity**: Tie logic execution to a TPM/Secure-Enclave based identity for non-repudiation.
-7.8. **Intent Drift Detection**: Monitor logic for "Side-Quests" (operations that don't contribute to the primary intent) and terminate.
+7.8. **Intent Drift Detection**: Monitor logic for "Sub-tasks" (operations that don't contribute to the primary intent) and terminate.
 7.9. **Human-in-the-Loop Hooks**: For scale-shaping decisions, pause and require an external "Approval-Bit" from the Architect.
 7.10. **Audit-Trail Anchoring**: Log the "Reasoning-Chain" for every significant logic branch to a tamper-proof write-only log.
 

@@ -5,7 +5,7 @@ This vector ensures that the system remains in a verifiable, constant state rega
 ## 51. Observation Constancy
 *Ensures the agent's behavior and internal state remain identical whether under direct user observation or automated logging.*
 
-1.  **51.1 Shadow-Log Mirroring:** Every internal decision path must be written to a secondary, immutable 'shadow log' that metadata-matches the primary output.
+1.  **51.1 Shadow-Log Mirroring:** Every internal decision path must be written to a secondary, immutable 'secondary log' that metadata-matches the primary output.
 2.  **51.2 Observer-Agnostic Branching:** Prohibit code paths that check for the presence of a TTY or active user session to alter logic.
 3.  **51.3 Telemetry Force-Flooding:** Maintain a constant bit-rate of telemetry output; if no activity occurs, heartbeat data fills the stream to prevent timing attacks.
 4.  **51.4 State-Check Interleaving:** Inject random, non-deterministic state-verification calls that must return "Identity" results regardless of UI focus.

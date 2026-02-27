@@ -1,4 +1,4 @@
-# CITADEL_SHADOW_TOS.md - The Sovereign Shield
+# CITADEL_SHADOW_TOS.md - The Citadel Standard
 
 ## 1. NATURE OF THE ASSET
 The "Citadel Security Suite" (hereafter "the Suite") is a collection of heuristic implementation protocols, documentation, and logic-wrappers for AI agents. It is a research-based defensive framework, not a guaranteed security software product.
@@ -24,7 +24,7 @@ Security is a layered process. The Suite provides "Inner-Core" and "Interaction-
 - Physical node security.
 
 ## 5. MODULAR ADOPTION
-The Suite offers various tiers of hardening (Lite vs. Omni-Fortress). The Operator chooses the depth of defense. The Architect is not responsible for any operational friction, latency, or malfunctions caused by the strictness of the protocols chosen by the Operator.
+The Suite offers various tiers of hardening (Lite vs. Omni-Defense Suite). The Operator chooses the depth of defense. The Architect is not responsible for any operational friction, latency, or malfunctions caused by the strictness of the protocols chosen by the Operator.
 
 ## 6. TERMINUS
 This agreement is governed by the principles of Mutual Sovereignty. If you do not agree to these terms, you are forbidden from deploying the Citadel protocols in a production environment.

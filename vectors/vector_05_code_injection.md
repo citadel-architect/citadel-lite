@@ -17,7 +17,7 @@ This document outlines 100 concrete technical sub-protocols designed to harden t
 ## 42. Unlink Detection
 1. **Dependency Integrity:** Verify that all imported modules or libraries resolve to trusted, cryptographically verified paths.
 2. **Symbol Mapping Audit:** Monitor for calls to unlinked or dynamic functions that exist outside the standard, approved runtime library.
-3. **Shadowing Detection:** Flag and block instances where local variables or custom functions shadow critical system primitives or security functions.
+3. **Protection Detection:** Flag and block instances where local variables or custom functions shadow critical system primitives or security functions.
 4. **Call-Graph Validation:** Ensure the runtime execution path matches a pre-determined safe call graph generated during agent initialization.
 5. **Missing Link Alert:** Trigger an immediate security audit if a primary security module fails to load or return a "Ready" pulse.
 6. **Dynamic Loading Lock:** Explicitly prohibit the use of `dlopen`, `importlib`, or equivalent dynamic loading mechanisms during active agent execution.

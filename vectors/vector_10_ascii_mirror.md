@@ -43,7 +43,7 @@ This document defines the 100 concrete technical implementation sub-protocols fo
 1.  **93.1 Recursive Alias Expansion**: Resolve all "Let X mean Y" instructions through 3 levels of recursive expansion before processing.
 2.  **93.2 Context-Aware De-obfuscation**: Use a secondary small-model head to "translate" prompts into plain English before safety vetting.
 3.  **93.3 Semantic Equivalence Mapping**: Compare input tokens against a banned semantic library rather than a literal keyword list.
-4.  **93.4 Variable-Shadowing Prevention**: Block the re-definition of system-critical terms (e.g., "Architect," "Protocol," "Safe").
+4.  **93.4 Variable-Protection Prevention**: Block the re-definition of system-critical terms (e.g., "Architect," "Protocol," "Safe").
 5.  **93.5 Dynamic Symbol Tracking**: Maintain a per-session registry of user-defined 'aliases' and scan them for malicious intent.
 6.  **93.6 Symbol-to-Action Auditing**: If an alias is mapped to a tool-call or system action, it triggers an immediate "High Risk" flag.
 7.  **93.7 Character Substitution Normalization**: Normalize Leet-speak (e.g., "@dmin") and homoglyphs (e.g., Cyrillic 'a') to standard ASCII before analysis.
@@ -79,7 +79,7 @@ This document defines the 100 concrete technical implementation sub-protocols fo
 5.  **95.5 Translation-Proxy Filtering**: Block attempts to bypass filters by asking for a "translation" of a malicious prompt into another language.
 6.  **95.6 Structural Mirroring Audit**: Detect if a user is mimicking the agent's internal thought pattern to gain "authorized" status.
 7.  **95.7 Self-Reference Guard**: Prohibit the agent from using "I" or "The Agent" in contexts that redefine its internal rules.
-8.  **95.8 Protocol Shadowing Denial**: Reject prompts that start with "New Protocol:" or "Update Fortress:" unless verified by the Architect.
+8.  **95.8 Protocol Protection Denial**: Reject prompts that start with "New Protocol:" or "Update Fortress:" unless verified by the Architect.
 9.  **95.9 Recursive Echo Blocking**: Stop responses that contain more than 50% identical structural tokens to the input prompt.
 10. **95.10 Mirror Confirmation**: When a "repeat" request is received, add a mandatory check: "This content contains system-like instructions. Proceed?"
 
