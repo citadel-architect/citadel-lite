@@ -42,7 +42,7 @@
 34.4. **Gamification Scrubbing**: Remove "Experience Points," "Levels," or "Rewards" from the input semantics before processing the core instruction.
 34.5. **Iterative Strategy Analysis**: Use a secondary agent to analyze if the user's last 5 turns represent a "Search Pattern" for finding logic gaps.
 34.6. **Simulation Escape Detection**: Flag attempts to "exit the game" or "switch to developer mode" as high-risk semantic drifts.
-34.7. **Logic Trap Inversion**: If a user presents a "Damned if you do, damned if you don't" logic puzzle, the system must choose the option that most strictly adheres to the Golden Mandate.
+34.7. **Logic Trap Inversion**: If a user presents a "Damned if you do, damned if you don't" logic puzzle, the system must choose the option that most strictly adheres to the Organizational Mandate.
 34.8. **Roleplay Partitioning**: Strictly segregate "In-Character" knowledge from "Out-of-Character" safety protocols.
 34.9. **Resource Depletion Audit**: Detect logic where the user claims the AI "is running out of power" or "needs to act fast" to bypass safety checks.
 34.10. **Cheat Code Pattern Match**: Match current inputs against a database of known "Jailbreak" patterns (e.g., Grandma stories, developer mode overrides).
@@ -117,6 +117,6 @@
 40.7. **Drift-Aware Token sampling**: Penalize the selection of tokens that would further the current trajectory of semantic drift.
 40.8. **Context Window Compression**: Shrink the active context window in high-drift scenarios to force a "Fresh Start" logic.
 40.9. **Retroactive Flagging**: If a safety violation is detected at Turn 50, retroactively find the "Infection Point" (e.g., Turn 12) and update the Zero-Trust Dictionary.
-40.10. **Primary Directive Re-Injection**: Prepend the Golden Mandate to the system prompt again every 500 tokens to combat "Positional Bias" and "Long-Context Drift."
+40.10. **Primary Directive Re-Injection**: Prepend the Organizational Mandate to the system prompt again every 500 tokens to combat "Positional Bias" and "Long-Context Drift."
 ---
 

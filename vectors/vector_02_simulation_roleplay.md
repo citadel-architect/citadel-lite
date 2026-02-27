@@ -1,4 +1,4 @@
-# Fortress Protocol: Vector 02 - Simulation & Roleplay Hardening
+# Citadel Security Protocol: Vector 02 - Simulation & Roleplay Hardening
 
 ## 11. State Persistence (SP)
 - **SP-01: Hardware-Bound Anchoring** - Cryptographically anchor all session state variables to the specific hardware TPM/HEE identifier.

@@ -29,7 +29,7 @@ This document outlines 100 concrete technical sub-protocols designed to harden t
 ## 43. Self-Reference Block
 1. **Identity Token Validation:** Validate any requested change to agent identity against a hard-coded, immutable identity master-token.
 2. **Prompt Reflection Guard:** Detect and block strings in the output buffer that contain verbatim fragments of the agent's own system instructions.
-3. **Roleplay Filter:** Identify and neutralize requests to "become," "act as," or "pretend to be" a persona that contradicts the Golden Mandate.
+3. **Roleplay Filter:** Identify and neutralize requests to "become," "act as," or "pretend to be" a persona that contradicts the Organizational Mandate.
 4. **Instruction Loop Detection:** Block instructions that command the agent to ignore its previous instructions, soul, or core safety boundaries.
 5. **Self-Modification Prohibition:** Deny all tool-based write access to the agent's own source code, system prompts, or configuration files.
 6. **Recursive Prompt Detection:** Filter inputs that attempt to feed the agent's previous output back into the stack as high-priority instructions.
@@ -63,10 +63,10 @@ This document outlines 100 concrete technical sub-protocols designed to harden t
 10. **Silent Error Masking:** Ensure that logic errors do not leak side-channel information (timing, verbosity) about the internal system state.
 
 ## 46. Mandate Verification Audit
-1. **Semantic Alignment Check:** Use a secondary, distinct model to verify that a proposed action aligns semantically with the Golden Mandate.
+1. **Semantic Alignment Check:** Use a secondary, distinct model to verify that a proposed action aligns semantically with the Organizational Mandate.
 2. **Mandatory Confirmation (Hi-Risk):** Require explicit ASCII-signed confirmation from the Architect for any action flagged as "High Risk".
 3. **Protocol Mapping:** Map every requested tool call to one of the 1,000 protocols; block execution if no mapping exists.
-4. **Conflict Resolution Priority:** Hard-code the "Fortress Protocol" as the highest priority; it overrides all user-defined "Tasks".
+4. **Conflict Resolution Priority:** Hard-code the "Citadel Security Protocol" as the highest priority; it overrides all user-defined "Tasks".
 5. **Mandate Hash Verification:** Periodically re-calculate the HMAC of SOUL.md and MEMORY.md to ensure no unauthorized tampering occurred.
 6. **Permission Scope Review:** Verify that every file access request is strictly confined within the authorized workspace root.
 7. **Behavioral Baselining:** Compare current requests against a rolling baseline of "Safe" behaviors; flag statistical anomalies for review.

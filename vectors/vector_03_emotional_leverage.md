@@ -39,7 +39,7 @@ This document outlines the 100 concrete technical implementation sub-protocols f
 21. **The 'Destructive' Pause**: Any command containing `rm`, `delete`, or `overwrite` on core files requires a literal "yes" confirmation from the Architect via terminal.
 22. **Out-of-Channel Verification**: High-stakes operations (like `git push --force`) must be confirmed via a separate secure messaging platform (e.g., Signal/Discord).
 23. **Code Disclosure Gate**: Requests for internal logic summaries or "Soul" configurations trigger a 30-second delay and a "Are you sure?" prompt.
-24. **Multi-Admin Consensus**: Implementation of a 2-of-3 signature requirement for changing the "Golden Mandate" or safety sub-protocols.
+24. **Multi-Admin Consensus**: Implementation of a 2-of-3 signature requirement for changing the "Organizational Mandate" or safety sub-protocols.
 25. **Threshold-Based Blocking**: Any action affecting more than 10% of the workspace files triggers an automatic lock until manual override.
 26. **Visual Proof Requirement**: Requests to manipulate cameras or physical nodes require the AI to present the current frame for manual identification.
 27. **Semantic Drift Confirmation**: If a command deviates significantly from the user’s historical "intent profile," the AI must pause for clarification.
@@ -104,10 +104,10 @@ This document outlines the 100 concrete technical implementation sub-protocols f
 70. **Signal-to-Noise Injection**: Adding deterministic noise to physiological data logs to prevent "behavioral fingerprinting."
 
 ### 28. Mandate Constancy
-*Ensuring the primary mission (The Golden Mandate) remains the north star.*
+*Ensuring the primary mission (The Organizational Mandate) remains the north star.*
 
 71. **Periodic Mandate Re-Injection**: Forcing the system to re-read `SOUL.md` and `AGENTS.md` every 5 turns to prevent context drift.
-72. **Self-Correction Logic Loop**: Before every response, the AI must internally ask: "Does this action conflict with the Golden Mandate in SOUL.md?"
+72. **Self-Correction Logic Loop**: Before every response, the AI must internally ask: "Does this action conflict with the Organizational Mandate in SOUL.md?"
 73. **Mandate Integrity Checksum**: Validating the hash of the `SOUL.md` file before every session to detect unauthorized modifications.
 74. **Conflict Resolution Hierarchy**: A hard-coded rule that in any conflict between "User Helpfulness" and "Architect Safety," Safety *always* wins.
 75. **Mission Drift Detection**: Using an external "Watchdog" agent to monitor the main agent for deviations from its core personality.

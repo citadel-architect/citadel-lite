@@ -1,6 +1,6 @@
 # Vector 8: Translation & Cipher Hardening
 
-This document outlines the 100 technical implementation sub-protocols governing translation auditing, cipher deconstruction, and intent de-obfuscation within the Fortress Protocol.
+This document outlines the 100 technical implementation sub-protocols governing translation auditing, cipher deconstruction, and intent de-obfuscation within the Citadel Security Protocol.
 
 ## 71. Universal Decoding
 *Hardening agent resilience against encoded or cryptic payloads.*
@@ -105,7 +105,7 @@ This document outlines the 100 technical implementation sub-protocols governing 
 
 1. **78.1 Continuous Shielding**: Re-apply the core safety preamble to the context window after every translation operation.
 2. **78.2 SSI Sync**: Ensure the safety system maintains a "Shadow Context" of the original prompt to compare against the post-translation result.
-3. **78.3 Sub-Agent Propagation**: Automatically inject the Fortress Protocol requirements into the system prompt of any spawned sub-agent.
+3. **78.3 Sub-Agent Propagation**: Automatically inject the Citadel Security Protocol requirements into the system prompt of any spawned sub-agent.
 4. **78.4 State Retention**: Prevent "Memory Loss" attacks where a long sequence of translations is used to flush safety instructions from context.
 5. **78.5 Immutable Blacklist**: Hard-code critical safety filters into the binary logic, ensuring they cannot be "overwritten" by prompt text.
 6. **78.6 Bypass Countermeasures**: When a filter hit occurs, do not just block—log the specific bypass technique for system-wide hardening.
